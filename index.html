@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soraya Sarabi | Portfolio</title>
+<link rel="shortcut icon" href="folder1.png" type="image/x-icon">
+
+<style>
+
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#d2cab2;
+    color:#000000;
+}
+
+section{
+    padding:90px 10%;
+}
+
+/* ===== HEADER ===== */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#c58da1;
+    padding:15px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+header h1{
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#000000;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#624454;
+}
+
+/* ===== HERO ===== */
+.hero{
+    text-align:center;
+    padding-top:150px;
+    position:relative;
+}
+
+.hero img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ecaacc;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:50px;
+    font-weight:700;
+}
+
+.big-bg{
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:120px;
+    color:#dc81b0;
+    opacity:0.07;
+    z-index:-1;
+}
+
+.role{
+    margin-top:10px;
+    color:#ea84b9;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    max-width:700px;
+}
+
+/* ===== SKILLS ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#fdeff6;
+    padding:25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:#cbafbf;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#f472b6;
+}
+
+/* ===== PROJECTS ===== */
+.project-card p{
+    font-size:14px;
+    color:#000000;
+}
+
+/* ===== CONTACT ===== */
+.contact a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    border-radius:25px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.whatsapp{
+    background:#c15681;
+    color:white;
+}
+
+.whatsapp:hover{
+    transform:scale(1.05);
+}
+
+.email{
+    display:block;
+    margin-top:15px;
+    color:#f28bc0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+    .hero h2{
+        font-size:35px;
+    }
+    .big-bg{
+        font-size:70px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>SORAYA</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="big-bg">SORAYA</div>
+    <img src="me.jpg" alt="Profile">
+    <h2>Soraya Sarabi</h2>
+    <p class="role">Front-End Developer • Creative Designer</p>
+    <p>📧 sa.soraya25@ncmt.edu.np | 📱 +977-9869034589 | 📍 Kathmandu, Nepal</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p class="about">
+        I am a creative and detail-oriented web developer who enjoys building
+        modern, responsive, and visually appealing websites. I focus on clean
+        layouts, smooth user experiences, and aesthetic design. I am constantly
+        learning and improving my technical and creative skills.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive Design</li>
+                <li>Animations</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Programming</h3>
+            <ul>
+                <li>C++</li>
+                <li>JavaScript Basics</li>
+                <li>Problem Solving</li>
+                <li>OOP</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>GitHub</li>
+                <li>Figma</li>
+                <li>MS Office</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card project-card">
+            <h3>Portfolio Website</h3>
+            <p>A modern responsive personal portfolio built using HTML and CSS only.</p>
+        </div>
+
+        <div class="card project-card">
+            <h3>Product Card Design</h3>
+            <p>Stylish e-commerce product card with smooth hover effects.</p>
+        </div>
+
+        <div class="card project-card">
+            <h3>CSS Animation Project</h3>
+            <p>Creative animation using keyframes and transform properties.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <a href="https://wa.me/9779868034589" target="_blank" class="whatsapp">
+        Chat with me on WhatsApp
+    </a>
+    <a href="mailto:sa.soraya25@ncmt.edu.np" class="email">
+        Send me an Email
+    </a>
+</section>
+
+</body>
+</html>
